@@ -17,3 +17,14 @@ Placer la DLL traitement dans le dossier ProcessIm/build/ + config(debug ou rele
  
  
  Version Linux pas encore testée. 
+ 
+ 
+ Projet réalisé par : 
+ 
+ Lionel Verot
+ Martin Samouiller
+ Florian Gire
+ Sylvain Martin
+ Quentin Lebosse
+ 
+ Le depot original à a été supprimé. 
