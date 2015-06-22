@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1700</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ProcessIm</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget1" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QMdiArea" name="mdiArea"/>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>1000</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_traitement">
+           <attribute name="title">
+            <string>Traitement</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QComboBox" name="cbTraitement">
+              <item>
+               <property name="text">
+                <string>Choix traitement</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Distance au fond</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Filtrage</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Seuillage</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Morphologie</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Transformation</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Histogramme</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Conversion</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="sa_outil">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>274</width>
+                 <height>603</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_analyse">
+           <attribute name="title">
+            <string>Analyse</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QComboBox" name="cbAnalyse">
+              <item>
+               <property name="text">
+                <string>Choix Analyse</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Lecture code barre</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Signatures</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Comptage Objet</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QScrollArea" name="sa_outil_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>274</width>
+                 <height>603</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="constlbl_Currentimage">
+         <property name="text">
+          <string>Selected image : </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_curren_image_selectionner">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>name</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1700</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionOuvrir_une_image"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionA_propos_de_ProcessIm"/>
+    <addaction name="actionTutoriel"/>
+   </widget>
+   <widget class="QMenu" name="menuTraitement">
+    <property name="title">
+     <string>Traitement</string>
+    </property>
+    <addaction name="actionDistance_au_fond"/>
+    <addaction name="actionFiltrage"/>
+    <addaction name="actionSeuillage"/>
+    <addaction name="actionMorphologie"/>
+    <addaction name="actionTransformation"/>
+    <addaction name="actionHistogramme"/>
+    <addaction name="actionConversion"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalyse">
+    <property name="title">
+     <string>Analyse</string>
+    </property>
+    <addaction name="actionLecture_codes_barres"/>
+    <addaction name="actionSignatures"/>
+    <addaction name="actionComptage_objet"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuTraitement"/>
+   <addaction name="menuAnalyse"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionOuvrir_une_image">
+   <property name="text">
+    <string>Ouvrir une image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_ProcessIm">
+   <property name="text">
+    <string>A propos de ProcessIm</string>
+   </property>
+  </action>
+  <action name="actionTutoriel">
+   <property name="text">
+    <string>Tutoriel</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionDossier_de_travail">
+   <property name="text">
+    <string>Dossier de travail</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionHSV">
+   <property name="text">
+    <string>HSV</string>
+   </property>
+  </action>
+  <action name="actionDistance_au_fond">
+   <property name="text">
+    <string>Distance au fond</string>
+   </property>
+  </action>
+  <action name="actionFiltrage">
+   <property name="text">
+    <string>Filtrage</string>
+   </property>
+  </action>
+  <action name="actionSeuillage">
+   <property name="text">
+    <string>Seuillage</string>
+   </property>
+  </action>
+  <action name="actionMorphologie">
+   <property name="text">
+    <string>Morphologie</string>
+   </property>
+  </action>
+  <action name="actionTransformation">
+   <property name="text">
+    <string>Transformation</string>
+   </property>
+  </action>
+  <action name="actionHistogramme">
+   <property name="text">
+    <string>Histogramme</string>
+   </property>
+  </action>
+  <action name="actionConversion">
+   <property name="text">
+    <string>Conversion</string>
+   </property>
+  </action>
+  <action name="actionLecture_codes_barres">
+   <property name="text">
+    <string>Lecture code barres</string>
+   </property>
+  </action>
+  <action name="actionSignatures">
+   <property name="text">
+    <string>Signatures</string>
+   </property>
+  </action>
+  <action name="actionComptage_objet">
+   <property name="text">
+    <string>Comptage Objet</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

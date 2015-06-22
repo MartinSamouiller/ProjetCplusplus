@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignatureForm</class>
+ <widget class="QWidget" name="SignatureForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1042</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>centreGravite_i</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>centreGravite_j</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>surface</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>codeFreeman</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>premierPt_i</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>premierPt_j</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>rectEnglob_Hi</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>rectEnglob_Hj</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>rectEnglob_Bi</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>rectEnglob_Bj</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>perimetre</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
